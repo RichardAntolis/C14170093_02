@@ -17,11 +17,11 @@ class CompactDisk extends Product implements Object {
   }
 }
 
-class Book extends Product implements Object {
+class Books extends Product implements Object {
   int isbn = 0;
   String? authors;
 
-  Book(String? id, String? title, String? description, int price, int isbn, String? authors) : super(id, title, description, price){
+  Books(String? id, String? title, String? description, int price, int isbn, String? authors) : super(id, title, description, price){
     this.isbn = isbn;
     this.authors = authors;
   }
@@ -41,12 +41,12 @@ class Book extends Product implements Object {
   }
 }
 
-class TravelGuide extends Product implements Object {
+class TravelGuides extends Product implements Object {
   int isbn = 0;
   String? authors;
   String? country;
 
-  TravelGuide(String? id, String? title, String? description, int price, int isbn, String? authors, String? country) : super(id, title, description, price){
+  TravelGuides(String? id, String? title, String? description, int price, int isbn, String? authors, String? country) : super(id, title, description, price){
     this.isbn = isbn;
     this.authors = authors;
     this.country = country;
